@@ -21,6 +21,7 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
   // this = Object.create(BlinkyDancer.prototype);
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node.attr('class', 'blinky');
   // return this;
 };
 

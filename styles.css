@@ -1,13 +1,14 @@
-body, html{
+body, html {
   height:100%;
 }
-body{
+body {
   margin: 0px;
   background-color:#444;
   font-size: 18px;
 }
-body, a:link, a:visited, a:active{
+body, a:link, a:visited, a:active {
   color: lightblue;
+  text-decoration: none;
 }
 .title, .addDancerButton{
   padding:5px 12px;
@@ -20,13 +21,24 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
+.blinky {
   border:10px solid red;
   border-radius:10px;
   position: absolute;
 }
 .grow {
-  border: solid red !important;
+  border-color: red;
+  border-style: solid;
   /*border-radius: 20px !important;*/
+  position: absolute;
+}
+.breakDancer {
+  background-image: url(http://img3.wikia.nocookie.net/__cb20131222052849/halonocanon/es/images/2/22/Breakdance.gif);
+  position: absolute;
+  width: 170px;
+  height: 170px;
+}
+
+.absolute {
   position: absolute;
 }
