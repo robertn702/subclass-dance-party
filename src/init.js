@@ -1,6 +1,46 @@
 $(document).ready(function(){
   window.dancers = [];
 
+
+  $(".moveDancerButton").on("click", function(event) {
+    for(var i = 0; i< dancers.length; i++){
+      //dancers[i].$node.addClass("left");
+      var rand = Math.random()*1000;+'%';
+      var rand2 = Math.random()*900;+'%';
+      dancers[i].$node.animate({
+        "left": rand,
+        "top": rand2
+      },5000)
+    }
+  });
+
+  $(".findPairButton").on("click", function(event) {
+    for(var i = 0; i< dancers.length; i++){
+      var firstDancer;
+      var closestDancer;
+      if (dancer.constructor.name === 'BreakDancer') {
+
+      }
+      //dancers[i].$node.addClass("left");
+      var rand = Math.random()*1000;+'%';
+      var rand2 = Math.random()*900;+'%';
+      dancers[i].$node.animate({
+        "left": rand,
+        "top": rand2
+      },5000)
+    }
+  });
+
+  // $(document).on('mouseenter', ".breakDancer", function(){
+  //   console.log(this);
+  //   $(this).hide();
+  // });
+
+  // $(".BreakDancer, .grow").on('click', function(event){
+  //   console.log(this);
+  //   console.log('check');
+  // });
+
   $(".addDancerButton").on("click", function(event){
     /* This function sets up the click handlers for the create-dancer
      * buttons on index.html. You should only need to make one small change to it.
@@ -26,6 +66,7 @@ $(document).ready(function(){
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+    dancers.push(dancer);
     $('body').append(dancer.$node);
   });
 });

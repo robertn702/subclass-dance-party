@@ -35,6 +35,8 @@
 var Dancer = function(top, left, timeBetweenSteps) {
   // this = Object.create(MakeDancer.prototype);
   this.time = timeBetweenSteps;
+  this.top = top;
+  this.left = left;
   this.$node = $('<span></span>');
   this.step();
   this.setPosition(top, left);

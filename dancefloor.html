@@ -8,10 +8,19 @@
     <script src="src/blinkyDancer.js"></script>
     <script src="src/breakDancer.js"></script>
     <script src="src/growDancer.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="topbar">
+    <div class="topbar navbar-header">
       <span class="title">Object Dance Party</span>
+      <a href="#" class="btn btn-info btn-sm moveDancerButton"><span class="glyphicon glyphicon-move"></span>Move Dancers</a>
+      <a href="#" class="moveDancerButton" data-dancer-maker-function-name="moveDancers">Move Dancers</a>
+      <a href="#" class="findPair" data-dancer-maker-function-name="findPair">Find Pair</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">Blinky Dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="BreakDancer">Break Dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="GrowDancer">Grow Dancer</a>

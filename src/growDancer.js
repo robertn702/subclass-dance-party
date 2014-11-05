@@ -15,7 +15,7 @@ GrowDancer.prototype.step = function() {
   if (isNaN(this.size) || this.size <= this.max) {
     this.size *= 1.05;
   } else {
-    this.size *= 0.5;
+    this.size *= 0.90;
   }
   //this.$node.toggleClass('grow');
   // if (isNaN(this.size) || this.size <= 100){
